@@ -11,7 +11,7 @@ uses python Script to store a list of movies,including box art imagery and a mov
 * fresh_tomatoes.py(module)
    * contains script for genrating webpage using instances of movies.
 * image(folder)
-   *contains images used in webpage.
+   * contains images used in webpage.
 
 ```fresh_tomatoes.open_movies_page(movies)```
 * where movies is list of instnces of class Movie
