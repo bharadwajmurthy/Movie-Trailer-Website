@@ -1,5 +1,6 @@
 # Movie Trailer Website:
-                            uses python Script to store a list of movies,including box art imagery and a movie trailer URL andgenerates webpage for showing movie info and trailers.
+
+uses python Script to store a list of movies,including box art imagery and a movie trailer URL andgenerates webpage for showing movie info and trailers.
 
 ## [FileList]:
 
