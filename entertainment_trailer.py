@@ -2,30 +2,36 @@
 # Creating instances of the movie class
 import fresh_tomatoes
 import media
+ls1 = [0]
 
-# It will create memory space for object story_toy which has instance variables are initialized to provided arguments
-slum_dog = media.Movie("Slum dog Millionaire", "A story of a boy live in slum and how he became millionaire", ".\images\\slum.jpg","https://www.youtube.com/watch?v=AIzbwV7on6Q")
+# It will create memory space for object slum_dog
+ls1.append("https://www.youtube.com/watch?v=AIzbwV7on6Q")
+ls1.append(".\images\\slum.jpg")
+slum_dog = media.Movie("Slum dog Millionaire", "inspirational", ls1[2], ls1[1])
 
-# It will create separate memory space for object story_toy which has instance variables are initialized to provided arguments
+# It will create separate memory space for object infinity
+ls1.append("https://www.youtube.com/watch?v=oXGm9Vlfx4w")
+ls1.append(".\images\\infinity.jpg")
+infinity = media.Movie(" Infinity", "drama", ls1[4], ls1[3])
 
-infinity = media.Movie(" Infinity", "a story of great mathematician ",".\images\\infinity.jpg", "https://www.youtube.com/watch?v=oXGm9Vlfx4w")
+ls1.append("www.youtube.com/watch?v=XWziSi-WN7w")
+ls1.append(".\images\\garana.jpg")
+garana = media.Movie("Garanamogudu", "drama ", ls1[6], ls1[5])
 
+ls1.append(" https://www.youtube.com/watch?v=DsEAHEASW5E")
+ls1.append(".\images\\atha.jpg")
+atharintiki = media.Movie("Atharintiki daredhi", "A drama", ls1[8], ls1[7])
 
-garana = media.Movie("Garanamogudu", "a strong human being ", ".\images\\garana.jpg", "www.youtube.com/watch?v=XWziSi-WN7w")
+ls1.append(" https://www.youtube.com/watch?v=zw_vD_57hrE&vl=te")
+ls1.append(".\images\\dhruva.jpg")
+dhruva = media.Movie("Dhruva", "a sincere human being", ls1[10], ls1[9])
 
-
-atharintiki = media.Movie("Atharintiki daredhi", "A man went to bring his aunty back to his home", ".\images\\atha.jpg", " https://www.youtube.com/watch?v=DsEAHEASW5E")
-
-dhruva = media.Movie("Dhruva", "a sincere human being", ".\images\\dhruva.jpg", " https://www.youtube.com/watch?v=zw_vD_57hrE&vl=te")
-
-khaidi = media.Movie("Khaidhino150", "A good heart person", ".\images\\khaidhi.jpg", "https://www.youtube.com/watch?v=oJxzTrvv-Uc")
+ls1.append("https://www.youtube.com/watch?v=oJxzTrvv-Uc")
+ls1.append(".\images\\khaidhi.jpg")
+khaidi = media.Movie("Khaidhino150", "A good heart person", ls1[12], ls1[11])
 
 # Creating list of movie objects
 movies = [slum_dog, infinity, garana, atharintiki, dhruva, khaidi]
 
-# Passing the movies list to fresh_tomatoes that will display the movie trailers on web page
+# Passing the movies list to fresh_tomatoes
 fresh_tomatoes.open_movies_page(movies)
-
-
-
-
